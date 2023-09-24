@@ -1,5 +1,5 @@
-using my.bookshop as my from '../db/data-model';
+using my.bookshop as db from '../db/data-model';
 
 service CatalogService {
-    @readonly entity Books as projection on my.Books;
+    @readonly entity Books as projection on db.Books;
 }
